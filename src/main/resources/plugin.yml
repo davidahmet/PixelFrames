@@ -1,0 +1,44 @@
+name: PixelFrames
+version: 1.4.1
+main: me.davidahmet.imagemaps.PixelFrames
+api-version: '26.1'
+author: davidahmet
+description: Display images in Minecraft using persistent map grids, item frames, caching, URLs, and GIFs.
+commands:
+  map:
+    description: Main PixelFrames command.
+    usage: /map <filename|gui|place|url|save|load|dither|reload> [WxH] [dither|nodither]
+    permission: pixelframes.use
+permissions:
+  pixelframes.use:
+    description: Allows basic /map image rendering.
+    default: op
+  pixelframes.gui:
+    description: Allows /map gui.
+    default: op
+  pixelframes.place:
+    description: Allows /map place.
+    default: op
+  pixelframes.url:
+    description: Allows /map url.
+    default: op
+  pixelframes.save:
+    description: Allows /map save.
+    default: op
+  pixelframes.load:
+    description: Allows /map load.
+    default: op
+  pixelframes.dither:
+    description: Allows /map dither on/off.
+    default: op
+  pixelframes.admin:
+    description: Allows admin actions, including reload, and bypasses all PixelFrames permissions.
+    default: op
+    children:
+      pixelframes.use: true
+      pixelframes.gui: true
+      pixelframes.place: true
+      pixelframes.url: true
+      pixelframes.save: true
+      pixelframes.load: true
+      pixelframes.dither: true

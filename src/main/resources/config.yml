@@ -1,0 +1,26 @@
+# PixelFrames configuration
+
+# Default map grid when the player does not type a size.
+default-width: 1
+default-height: 1
+
+# Safety limits for very large renders.
+max-grid-width: 8
+max-grid-height: 8
+max-image-size-mb: 15
+
+# Rendering defaults.
+default-dithering: true
+allow-gif-animation: true
+max-gif-frames: 60
+
+# URL downloading.
+allow-url-downloads: true
+url-connect-timeout-ms: 8000
+url-read-timeout-ms: 15000
+
+# Placement.
+placement-reach: 8
+
+# Messages. Use & color codes.
+messages-prefix: "&d[PixelFrames]&r "
